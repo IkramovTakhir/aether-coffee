@@ -24,6 +24,28 @@ html {
     --glass-border: rgba(255, 255, 255, 0.08);
     --glass: rgba(255, 255, 255, 0.03);
 }
+.orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1; /* Уходит на самый задний план */
+    pointer-events: none;
+    opacity: 0.2;
+}
+.orb-1 {
+    width: 600px;
+    height: 600px;
+    background: var(--accent);
+    top: -10%;
+    left: -10%;
+}
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: #6366f1;
+    bottom: -5%;
+    right: -5%;
+}
 
 body {
     font-family: 'Inter', sans-serif;
